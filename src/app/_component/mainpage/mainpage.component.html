@@ -1,0 +1,240 @@
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Business Directory</h1>
+    <p>The ultimate service provider.</p>
+  </header>
+  <div class="w3-content" id="photos">
+    <h2 class="w3-text-light-grey block">The Ultimate solution provider for the listed works here</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="container block">
+      <div class="grid_box">
+        <div class="box box1 carousel-container">
+          <app-image-slider [images]="images" [autoSlide]="true"></app-image-slider>
+        </div>
+        <div class="box box2">
+          <img src="assets/Images/wedding.jpg" class="grid_img" placeholder="ELECTRICIAN">
+        </div>
+        <div class="box box3">
+          <img src="assets/Images/rocks.jpg" class="grid_img">
+        </div>
+        <div class="box box4">
+          <img src="assets/Images/sailboat.jpg" class="grid_img">
+        </div>
+
+        <div class="box box5">
+          <img src="assets/Images/underwater.jpg" class="grid_img">
+        </div>
+        <div class="box box6">
+          <img src="assets/Images/chef.jpg" class="grid_img">
+        </div>
+        <div class="box box7">
+          <img src="assets/Images/cab.jpg" class="grid_img">
+        </div>
+        <div class="box box8">
+          <img src="assets/Images/p6.jpg" class="grid_img">
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey block" style="padding-top:64px" id="about">
+      <h2 class="w3-text-light-grey">SEARCH YOUR CATEGORIES</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>
+      <div class="category_div">
+        <div class="gif_div">
+
+          <img src="assets/Gif/electrician.gif" class="gif" (click)="search_category('ELECTRICIAN')">
+          <span class="gif_desc" style="">ELECTRICIAN</span>
+        </div>
+        <div class="gif_div">
+          <img src="assets/Gif/mechanic.gif" class="gif" (click)="search_category('MECHANIC')">
+          <p class="gif_desc" style="">MECHANIC</p>
+        </div>
+
+        <div class="gif_div">
+
+          <img src="assets/Gif/plumber.gif" class="gif" (click)="search_category('PLUMBER')">
+          <span class="gif_desc" style="">PLUMBER</span>
+        </div>
+
+        <div class="gif_div">
+
+          <img src="assets/Gif/cab.gif" class="gif" (click)="search_category('AUTO')">
+          <span class="gif_desc" style="">AUTO</span>
+        </div>
+
+        <div class="gif_div">
+
+          <img src="assets/Gif/restaurant.gif" class="gif" (click)="search_category('RESTURANT')">
+          <span class="gif_desc" style="">RESTURANT</span>
+        </div>
+
+        <div class="gif_div">
+
+          <img src="assets/Gif/hotel.gif" class="gif" (click)="search_category('HOTEL')">
+          <span class="gif_desc" style="">HOTEL</span>
+        </div>
+
+        <div class="gif_div">
+
+          <img src="assets/Gif/cab.gif" class="gif" (click)="search_category('CAB')">
+          <span class="gif_desc" style="">CAB</span>
+        </div>
+      </div>
+
+      <!-- <h3 class="w3-padding-16 w3-text-light-grey">WHAT OUR COSTOMER SAYS</h3>
+      <p class="w3-wide">Excelent work</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+      </div>
+      <p class="w3-wide">Satified work</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+      </div>
+      <p class="w3-wide">UnSatified work</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:5%"></div>
+      </div><br>
+      
+      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">6+</span><br>
+          Works Tied up with
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">100+</span><br>
+          Jobs Done
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">89+</span><br>
+          Happy Clients
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">150+</span><br>
+          Meetings
+        </div>
+      </div> -->
+      <!-- Grid for pricing tables -->
+      <!-- <h3 class="w3-padding-16 w3-text-light-grey">MAXIMUM PRICE RATE FOR THE LISTED SERVICES</h3>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-dark-grey w3-xlarge w3-padding-32">1st Time</li>
+            <li class="w3-padding-16">Electrician</li>
+            <li class="w3-padding-16">Mechanic</li>
+            <li class="w3-padding-16">Plumber</li>
+            <li class="w3-padding-16">Cab</li>
+            <li class="w3-padding-16">Food Home delivery(EXCEPT)</li>
+            <li class="w3-padding-16">Auto</li>
+            <li class="w3-padding-16">Hotel</li>
+            <li class="w3-padding-16">
+              <h2>Rs. 400</h2>
+              <span class="w3-opacity">Per Work</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-dark-grey w3-xlarge w3-padding-32">After 1st Time</li>
+            <li class="w3-padding-16">Electrician</li>
+            <li class="w3-padding-16">Mechanic</li>
+            <li class="w3-padding-16">Plumber</li>
+            <li class="w3-padding-16">Cab</li>
+            <li class="w3-padding-16">Food Home delivery(EXCEPT)</li>
+            <li class="w3-padding-16">Auto</li>
+            <li class="w3-padding-16">Hotel</li>
+            <li class="w3-padding-16">
+              <h2>Rs. 200</h2>
+              <span class="w3-opacity">per Work</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+
+
+      <div class="container block">
+        <h2 class="w3-text-light-grey" style="padding-top:50px">TIE UP WITH US</h2>
+        <hr style="width:200px;position: relative;" class="w3-opacity">
+        <h3>
+          Are you a business owner interested in being featured in our
+          directory? We’d love to showcase your business! Click here to submit your details and connect with our growing
+          community.
+         </h3>
+         <button type="button" (click)="navigateToSectionPage()">
+          Link
+        </button>
+         <!-- <h1>CLICK THE LINK</h1>
+        <p>Move on to digital media with digital INDIA</p> -->
+        <!-- <router-outlet></router-outlet> -->
+      </div>
+
+      <div class="container w3-padding-24 block">
+        <!-- Testimonials -->
+        <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
+        <img src="images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Christo .</span>Front end Web Developer.</p>
+        <p></p><br>
+      </div>
+
+    </div>
+  </div>
+  <!-- Contact Section -->
+  <div class="w3-content w3-text-grey block" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Theni, TAMILNADU</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 917708884331</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: christopherarulraj4</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="search.php" method="POST" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button type="submit" class="w3-button w3-light-grey w3-padding-large">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    <!-- End Contact Section -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge block">
+
+    <i class="fa fa-facebook-official w3-hover-opacity contact_icon"></i>
+    <i class="fa fa-instagram w3-hover-opacity contact_icon"></i>
+    <i class="fa fa-snapchat w3-hover-opacity contact_icon"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity contact_icon"></i>
+    <i class="fa fa-twitter w3-hover-opacity contact_icon"></i>
+    <i class="fa fa-linkedin w3-hover-opacity contact_icon"></i>
+    <p class="w3-medium">Powered by <a href="" class="w3-hover-opacity" style="text-decoration: none;color:lightgray" target="_blank"
+        class="w3-hover-text-green">christopherarulraj4@gmail.com</a></p>
+    <!-- End footer -->
+  </footer>
+
+  <a class="gotopbtn" (click)="scrollToTop()" *ngIf="showScrollButton">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 30px;">
+      <path fill="#d7dae0"
+        d="M246.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 109.3 361.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 301.3 361.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z" />
+    </svg>
+  </a>
+  <!-- END PAGE CONTENT -->
+</div>

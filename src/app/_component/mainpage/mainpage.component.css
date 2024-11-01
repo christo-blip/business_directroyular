@@ -1,0 +1,223 @@
+#main{
+    margin-left: 120px;
+}
+.category_div{
+display: flex;
+justify-content: space-evenly;
+gap: 10px;
+flex-wrap: wrap;
+
+}
+.gif_div{
+    border: 2px solid white;
+    /* width: 70px;
+    height: 70px;
+    border-radius: 35px; */
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.gif{
+    width: 50px;height: 50px;position: relative;left: 20px;top: 15px; 
+}
+.gif_desc{
+  display: block;
+  font-size: 12px;
+  position: relative;
+  top:10px;
+  text-align: center;
+}
+
+  
+  .category_div .gif_div .gif {
+    /* width: 80px;
+    height: 80px; */
+    /* background-color: #5a5555; */
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    /* margin: 0 10px; */
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    /* border: 3px solid #fff; */
+    z-index: 1;
+  }
+  
+  .category_div .gif_div img {
+    /* position: relative; */
+ 
+    transition: .5s;
+    /* z-index: 3; */
+  }
+  
+  .category_div .gif_div:hover .gif {
+    /* color: #fff; */
+    transform: rotateY(360deg);
+  }
+  
+
+  .category_div .gif_div img:hover:before {
+    top: 0;
+  }
+
+  .category_div .gif_div:nth-child(1) img:before{
+    background: grey;
+  }
+  
+ .category_div .gif_div:nth-child(2) .gif:before{
+    background: grey;
+  }
+  
+ .category_div .gif_div:nth-child(3) .gif:before {
+    background: grey;
+  }
+  
+  .category_div .gif_div:nth-child(4) .gif:before {
+    background: grey;
+  }
+
+  .category_div .gif_div:nth-child(5) .gif:before {
+    background: grey;
+  }
+
+  .category_div .gif_div:nth-child(6) .gif:before {
+    background: grey;
+  }
+
+  .category_div .gif_div:nth-child(7) .gif:before {
+    background: grey;
+  }
+  .grid_box{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    grid-auto-rows:150px;
+    gap:20px;
+  }
+
+.box1{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.grid_img{
+  width:100%;height:150px
+}
+
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: #222;
+  bottom: 40px;
+  right:15px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    #main {margin-left: 0}
+    .grid_box{
+      display:block;
+    }
+    .box{
+      margin:10px;
+      display: grid;
+      justify-items: center;
+    }
+    .grid_img{
+      width:55%;
+      height:150px
+    }
+
+}
+
+/* css animation */
+
+/* .cssanimation {
+  opacity: 0; 
+  transition: opacity 0.5s ease-in-out; 
+}
+
+.pushReleaseFromLeft {
+  animation-name: pushReleaseFromLeft;
+  opacity: 1; 
+}
+ */
+
+
+
+ 
+@keyframes pushReleaseFromLeft {
+  from { transform: translateX(-100%); }
+  30% { transform: translateX(100px); }
+} 
+
+.fromleft{
+  animation: pushReleaseFromLeft;
+  animation-timeline: view();
+  animation-range:entry 0%;
+}
+
+
+@keyframes appear {
+  from{opacity: 0;
+  scale: 0.4;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.block{
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range:entry 0%;
+}
+
+.contact_icon{
+  margin:10px;
+}
+
+
+/* #tooltipText{
+  position:absolute;
+  left:50%;
+  top:0;
+  transform: translate(-50%);
+  background-color: #000;
+  color:#fff;
+  white-space: nowrap;
+  padding: 10px 15px;
+  border-radius: 7px;
+  visibility:hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#tooltipText::before{
+  content:"";
+  position: absolute;
+  left:50%;
+  top: 100px;
+  transform: translate(-50%);
+  border: 15px solid;
+  border-color: #000 #000 #0000 #000;
+}
+#tooltip:hover #tooltipText{
+  top:-130%;
+  visibility: visible;
+  opacity: 1;
+} */
+
+
+
+
