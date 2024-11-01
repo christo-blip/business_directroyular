@@ -17,12 +17,12 @@ public autoSlide=false;
 public slidesInterval = 3000;
 private intervalId: any;
 images:any[]=[
-  {url:'/assets/auto.jpg',title:'Auto',description:''},
-  {url:'/assets/electrician.jpg',title:'Electrician',description:''},
-  {url:'/assets/mechanic.jpg',title:'Mechanic',description:''},
-  {url:'/assets/plumbing.jpg',title:'Plumber',description:''},
-  {url:'/assets/taxi.jpg',title:'Taxi',description:''},
-  {url:'/assets/restrant.jpg',title:'Restrant',description:''},];
+  {url:'assets/auto.jpg',title:'Auto',description:''},
+  {url:'assets/electrician.jpg',title:'Electrician',description:''},
+  {url:'assets/mechanic.jpg',title:'Mechanic',description:''},
+  {url:'assets/plumbing.jpg',title:'Plumber',description:''},
+  {url:'assets/taxi.jpg',title:'Taxi',description:''},
+  {url:'assets/restrant.jpg',title:'Restrant',description:''},];
  
 
   constructor(public router:Router,private el: ElementRef) { }
